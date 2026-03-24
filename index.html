@@ -891,7 +891,11 @@ function doLogout() {
 function loadPrivateData() {
   db.collection('private').doc('datos').get()
     .then(function(doc) {
-      if (!doc.exists) return;
+      if (!doc.exists) {
+        console.error('Documento no encontrado en Firestore');
+        showDebugError('Documento no encontrado en Firestore');
+        return;
+      }
       var d = doc.data();
       document.querySelectorAll('[data-field]').forEach(function(el) {
         var v = d[el.getAttribute('data-field')];
@@ -899,7 +903,17 @@ function loadPrivateData() {
       });
       document.body.classList.add('loaded');
     })
-    .catch(function(err) { console.error('Firestore error:', err); });
+    .catch(function(err) {
+      console.error('Firestore error:', err);
+      showDebugError(err.code + ': ' + err.message);
+    });
+}
+
+function showDebugError(msg) {
+  var div = document.createElement('div');
+  div.style.cssText = 'position:fixed;bottom:16px;left:16px;right:16px;background:#C4613A;color:#fff;padding:12px 16px;border-radius:10px;font-size:13px;z-index:9999;font-family:monospace;';
+  div.textContent = '⚠️ Error Firestore: ' + msg;
+  document.body.appendChild(div);
 }
 
 // ── TABS ──
