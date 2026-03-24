@@ -10,6 +10,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app-check-compat.js"></script>
 <style>
   :root {
     --gold:#C9A84C; --gold-light:#E8C97A; --cream:#F5F0E8;
@@ -834,6 +835,10 @@ var firebaseConfig = {
   appId: "1:979773721780:web:56e2eba9f1511078db9be1"
 };
 firebase.initializeApp(firebaseConfig);
+firebase.appCheck().activate(
+  new firebase.appCheck.ReCaptchaV3Provider('6LcexpUsAAAAAKzsf1RuXtry4H_9BGvnemiGP7m1'),
+  true
+);
 var auth = firebase.auth();
 var db   = firebase.firestore();
 
