@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vacaciones Verano 2026 · Toledo, Madrid &amp; Costa Brava</title>
+<title>Vacaciones Verano 2026 · Toledo & Madrid</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
@@ -99,9 +99,6 @@
   .day-dot.madrid { background:rgba(201,168,76,0.12); color:var(--gold); }
   .day-dot.travel { background:rgba(107,140,107,0.12); color:var(--sage); }
   .day-dot.pa { background:rgba(80,120,180,0.12); color:#5078B4; }
-  .day-dot.roses { background:rgba(27,138,138,0.12); color:#1B8A8A; }
-  .day-dot.girona { background:rgba(139,92,246,0.12); color:#8B5CF6; }
-  .day-dot.montne { background:rgba(107,140,107,0.15); color:#4A7A4A; }
   .day-num { font-size:10px; color:var(--muted); letter-spacing:1px; }
   .day-body { background:var(--card-bg); border:1px solid var(--border); border-radius:13px; padding:14px 16px; }
   .day-header { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; flex-wrap:wrap; }
@@ -117,9 +114,6 @@
   .tag.pa { background:rgba(80,120,180,0.1); color:#5078B4; }
   .tag.travel { background:rgba(107,140,107,0.1); color:var(--sage); }
   .tag.park { background:rgba(160,70,160,0.1); color:#8A3FA0; }
-  .tag.roses { background:rgba(27,138,138,0.1); color:#1B8A8A; }
-  .tag.girona { background:rgba(139,92,246,0.1); color:#8B5CF6; }
-  .tag.montne { background:rgba(74,122,74,0.12); color:#4A7A4A; }
   .day-detail { margin-top:9px; padding-top:9px; border-top:1px dashed var(--border); display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:6px; }
   .detail-item { font-size:12px; color:var(--muted); display:flex; gap:5px; align-items:center; }
   .detail-item strong { color:var(--text); font-weight:600; }
@@ -254,8 +248,8 @@
   <div class="bg-pattern"></div>
   <div class="login-box">
     <div class="login-eyebrow">Verano 2026</div>
-    <div class="login-title">Verano <span>2026</span></div>
-    <div class="login-sub">14 julio &mdash; 29 julio &middot; 16 d&iacute;as &middot; Familia</div>
+    <div class="login-title">Toledo <span>&amp;</span> Madrid</div>
+    <div class="login-sub">14 &mdash; 22 de Julio &middot; 9 d&iacute;as &middot; Familia</div>
     <div class="login-field">
       <label class="login-label" for="login-email">Email</label>
       <input class="login-input" id="login-email" type="email" placeholder="tu@email.com" autocomplete="email">
@@ -278,8 +272,8 @@
   <div class="header-inner">
     <div>
       <div class="header-eyebrow">Verano 2026</div>
-      <h1>Toledo, Madrid <span>&amp;</span> Costa Brava</h1>
-      <div class="header-meta">14 julio &mdash; 29 julio &middot; 16 d&iacute;as &middot; Familia</div>
+      <h1>Toledo <span>&amp;</span> Madrid</h1>
+      <div class="header-meta">14 &mdash; 22 de Julio &middot; 9 d&iacute;as &middot; Familia</div>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end;">
       <div class="countdown-pill">
@@ -319,7 +313,7 @@
 <!-- ITINERARIO -->
 <div class="section active" id="tab-itinerario">
   <div class="section-head"><span class="section-icon">&#128197;</span><div class="section-title">Itinerario</div></div>
-  <div class="section-sub">16 d&iacute;as &middot; Toledo &middot; Madrid &middot; PortAventura &middot; Roses &middot; Girona</div>
+  <div class="section-sub">9 d&iacute;as &middot; Toledo &middot; Madrid &middot; PortAventura</div>
 
   <div class="day-card">
     <div class="day-date"><div class="day-dot travel">14</div><div class="day-num">MAR</div></div>
@@ -461,109 +455,20 @@
       <div class="day-tags"><span class="tag pa">PortAventura</span><span class="tag travel">Regreso</span></div>
     </div>
   </div>
-
-  <div class="day-card">
-    <div class="day-date"><div class="day-dot travel">23</div><div class="day-num">JUE</div></div>
-    <div class="day-body">
-      <div class="day-weekday">Jueves 23 julio</div>
-      <div class="day-title">Llegada a Font Montnegre &#127966;</div>
-      <div class="day-desc">PortAventura &rarr; Font Montnegre &middot; descanso</div>
-      <div class="day-tags"><span class="tag travel">Traslado</span><span class="tag montne">Font Montnegre</span></div>
-      <div class="day-detail">
-        <div class="detail-item">&#128663; <strong>Distancia:</strong>&nbsp;128 km &middot; aprox. 1h 20min</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-date"><div class="day-dot montne">24</div><div class="day-num">VIE</div></div>
-    <div class="day-body">
-      <div class="day-weekday">Viernes 24 julio</div>
-      <div class="day-title">Font Montnegre &middot; Descanso &#127807;</div>
-      <div class="day-desc">D&iacute;a libre en casa</div>
-      <div class="day-tags"><span class="tag montne">Font Montnegre</span></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-date"><div class="day-dot montne">25</div><div class="day-num">S&Aacute;B</div></div>
-    <div class="day-body">
-      <div class="day-weekday">S&aacute;bado 25 julio</div>
-      <div class="day-title">Font Montnegre &middot; Descanso &#127807;</div>
-      <div class="day-desc">D&iacute;a libre en casa</div>
-      <div class="day-tags"><span class="tag montne">Font Montnegre</span></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-date"><div class="day-dot travel">26</div><div class="day-num">DOM</div></div>
-    <div class="day-body">
-      <div class="day-header">
-        <div><div class="day-weekday">Domingo 26 julio</div><div class="day-title">Font Montnegre &rarr; Roses &#127754;</div><div class="day-desc">Traslado &middot; check-in Hollywood Palazzo &middot; visitar familiares</div></div>
-        <div style="text-align:right"><div class="day-price priv" data-field="roses_hotel_precio">&#128274;</div><div class="day-price-sub">hotel Roses</div></div>
-      </div>
-      <div class="day-tags"><span class="tag travel">Traslado</span><span class="tag roses">Roses</span></div>
-      <div class="day-detail">
-        <div class="detail-item">&#127968; <strong>Hotel:</strong>&nbsp;Hollywood Palazzo &middot; Roses</div>
-        <div class="detail-item">&#128273; <strong>PIN:</strong>&nbsp;<span class="priv" data-field="roses_hotel_pin">&#128274;</span></div>
-        <div class="detail-item">&#128203; <strong>Loc:</strong>&nbsp;<span class="priv" data-field="roses_hotel_loc">&#128274;</span></div>
-        <div class="detail-item">&#128663; <strong>Distancia:</strong>&nbsp;124 km &middot; aprox. 1h 40min</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-date"><div class="day-dot roses">27</div><div class="day-num">LUN</div></div>
-    <div class="day-body">
-      <div class="day-weekday">Lunes 27 julio</div>
-      <div class="day-title">Catam&aacute;ran Islas Medes &#9973;&#65039;</div>
-      <div class="day-desc">Excursi&oacute;n en catam&aacute;ran por las Islas Medes</div>
-      <div class="day-tags"><span class="tag roses">Roses</span><span class="tag park">Actividad</span></div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-date"><div class="day-dot travel">28</div><div class="day-num">MAR</div></div>
-    <div class="day-body">
-      <div class="day-header">
-        <div><div class="day-weekday">Martes 28 julio</div><div class="day-title">Roses &rarr; Besal&uacute; &rarr; Girona &#127963;&#65039;</div><div class="day-desc">Visita Besal&uacute; &middot; traslado &middot; check-in Hotel Sausa</div></div>
-        <div style="text-align:right"><div class="day-price priv" data-field="girona_hotel_precio">&#128274;</div><div class="day-price-sub">hotel Girona</div></div>
-      </div>
-      <div class="day-tags"><span class="tag travel">Traslado</span><span class="tag girona">Girona</span></div>
-      <div class="day-detail">
-        <div class="detail-item">&#127963;&#65039; <strong>Besal&uacute;:</strong>&nbsp;<a href="https://maps.google.com/?q=Besalú+Girona" target="_blank" style="color:var(--gold)">Ver en Maps</a>&nbsp;&middot; 36,6 km &middot; 30 min</div>
-        <div class="detail-item">&#127968; <strong>Hotel:</strong>&nbsp;<a href="https://www.hotelsausa.com/ca/" target="_blank" style="color:var(--gold)">Hotel Sausa &middot; Girona</a></div>
-        <div class="detail-item">&#128273; <strong>PIN:</strong>&nbsp;<span class="priv" data-field="girona_hotel_pin">&#128274;</span></div>
-        <div class="detail-item">&#128203; <strong>Loc:</strong>&nbsp;<span class="priv" data-field="girona_hotel_loc">&#128274;</span></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="day-card">
-    <div class="day-date"><div class="day-dot girona">29</div><div class="day-num">MI&Eacute;</div></div>
-    <div class="day-body">
-      <div class="day-weekday">Mi&eacute;rcoles 29 julio</div>
-      <div class="day-title">Girona &middot; L'Escala &rarr; Font Montnegre &#127968;</div>
-      <div class="day-desc">Visita L'Escala &middot; regreso a casa</div>
-      <div class="day-tags"><span class="tag girona">Girona</span><span class="tag travel">Regreso</span><span class="tag montne">Font Montnegre</span></div>
-    </div>
-  </div>
 </div>
 
 <!-- MAPA -->
 <div class="section" id="tab-mapa">
   <div class="section-head"><span class="section-icon">&#128506;&#65039;</span><div class="section-title">Mapa del viaje</div></div>
-  <div class="section-sub">Ruta completa: Barcelona &rarr; Toledo &rarr; Madrid &rarr; PortAventura &rarr; Roses &rarr; Girona</div>
+  <div class="section-sub">Ruta completa: Barcelona &rarr; Toledo &rarr; Madrid &rarr; PortAventura</div>
   <div class="map-container">
     <div class="map-note">Mapa interactivo &mdash; haz clic en los marcadores para ver detalles</div>
     <div id="travel-map"></div>
     <div style="padding:10px 16px 14px;display:flex;flex-wrap:wrap;gap:8px;">
-      <a href="https://www.google.com/maps/dir/Barcelona/Toledo/Madrid/Salou/Roses/Girona" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--gold);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:8px;padding:7px 13px;text-decoration:none;">&#128506;&#65039; Ruta completa en Google Maps</a>
+      <a href="https://www.google.com/maps/dir/Barcelona/Toledo/Madrid/Salou" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--gold);background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);border-radius:8px;padding:7px 13px;text-decoration:none;">&#128506;&#65039; Ruta completa en Google Maps</a>
       <a href="https://www.google.com/maps/dir/Barcelona/Toledo" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--muted);background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:7px 13px;text-decoration:none;">&#128663; BCN &rarr; Toledo</a>
       <a href="https://www.google.com/maps/dir/Toledo/Madrid" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--muted);background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:7px 13px;text-decoration:none;">&#128663; Toledo &rarr; Madrid</a>
       <a href="https://www.google.com/maps/dir/Madrid/Salou" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--muted);background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:7px 13px;text-decoration:none;">&#128663; Madrid &rarr; Salou</a>
-      <a href="https://www.google.com/maps/dir/Salou/Roses" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--muted);background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:7px 13px;text-decoration:none;">&#128663; Salou &rarr; Roses</a>
-      <a href="https://www.google.com/maps/dir/Roses/Girona" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;color:var(--muted);background:var(--card-bg);border:1px solid var(--border);border-radius:8px;padding:7px 13px;text-decoration:none;">&#128663; Roses &rarr; Girona</a>
     </div>
   </div>
   <div class="stops-list">
@@ -571,11 +476,6 @@
     <div class="stop-card"><div class="stop-num s2">2</div><div class="stop-info"><h4>&#127917; Puy du Fou Espa&ntilde;a</h4><p>15 julio &middot; Parque de espect&aacute;culos</p><a href="https://maps.google.com/?q=Puy+du+Fou+España+Toledo" target="_blank">&#128205; Ver en Maps</a>&nbsp;&nbsp;<a href="https://www.puydufou.com/espana" target="_blank">&#127760; Web oficial</a></div></div>
     <div class="stop-card"><div class="stop-num s3">3</div><div class="stop-info"><h4>&#127961;&#65039; Madrid</h4><p>16&ndash;20 julio &middot; ibis Styles Las Ventas</p><a href="https://maps.app.goo.gl/HGADjf72Mb1WWdmYA" target="_blank">&#128205; Ver hotel en Maps</a></div></div>
     <div class="stop-card"><div class="stop-num s4">4</div><div class="stop-info"><h4>&#127905; PortAventura World</h4><p>20&ndash;22 julio &middot; Salou, Tarragona</p><a href="https://maps.google.com/?q=PortAventura+World+Salou" target="_blank">&#128205; Ver en Maps</a></div></div>
-    <div class="stop-card" style="border-color:rgba(27,138,138,0.3)"><div class="stop-num" style="background:rgba(27,138,138,0.15);color:#1B8A8A;">5</div><div class="stop-info"><h4>&#127754; Roses &middot; Costa Brava</h4><p>26&ndash;28 julio &middot; Hollywood Palazzo</p><a href="https://maps.google.com/?q=Roses+Girona+Costa+Brava" target="_blank">&#128205; Ver en Maps</a></div></div>
-    <div class="stop-card" style="border-color:rgba(27,138,138,0.2)"><div class="stop-num" style="background:rgba(27,138,138,0.1);color:#1B8A8A;">6</div><div class="stop-info"><h4>&#9973;&#65039; Islas Medes</h4><p>27 julio &middot; Excursi&oacute;n catam&aacute;ran</p><a href="https://maps.google.com/?q=Islas+Medes+Girona" target="_blank">&#128205; Ver en Maps</a></div></div>
-    <div class="stop-card" style="border-color:rgba(139,92,246,0.3)"><div class="stop-num" style="background:rgba(139,92,246,0.15);color:#8B5CF6;">7</div><div class="stop-info"><h4>&#127963;&#65039; Besal&uacute;</h4><p>28 julio &middot; Visita medieval</p><a href="https://maps.google.com/?q=Besalú+Girona" target="_blank">&#128205; Ver en Maps</a></div></div>
-    <div class="stop-card" style="border-color:rgba(139,92,246,0.3)"><div class="stop-num" style="background:rgba(139,92,246,0.15);color:#8B5CF6;">8</div><div class="stop-info"><h4>&#127963;&#65039; Girona</h4><p>28&ndash;29 julio &middot; Hotel Sausa</p><a href="https://www.hotelsausa.com/ca/" target="_blank">&#127760; Web hotel</a>&nbsp;&nbsp;<a href="https://maps.google.com/?q=Hotel+Sausa+Girona" target="_blank">&#128205; Maps</a></div></div>
-    <div class="stop-card" style="border-color:rgba(27,138,138,0.2)"><div class="stop-num" style="background:rgba(27,138,138,0.1);color:#1B8A8A;">9</div><div class="stop-info"><h4>&#127754; L'Escala</h4><p>29 julio &middot; Visita</p><a href="https://maps.google.com/?q=L'Escala+Girona" target="_blank">&#128205; Ver en Maps</a></div></div>
   </div>
   <div style="margin-top:12px;background:var(--card-bg);border:1px solid var(--border);border-radius:11px;padding:14px 16px;">
     <div style="font-size:13px;font-weight:600;margin-bottom:5px;">&#127869;&#65039; Comer/cenar cerca del hotel &middot; Madrid</div>
@@ -654,29 +554,6 @@
         <div class="reserva-field"><span class="r-icon">&#8505;&#65039;</span><div><div class="r-label">ESTADO</div><div class="r-value" style="color:#5078B4">Pendiente de reservar</div></div></div>
       </div>
     </div>
-    <div class="reserva-card hotel" style="border-left-color:#1B8A8A;">
-      <div class="reserva-type" style="color:#1B8A8A;">&#127754; Hotel &middot; Roses</div>
-      <div class="reserva-name">Hollywood Palazzo &middot; Roses</div>
-      <div class="reserva-fields">
-        <div class="reserva-field"><span class="r-icon">&#128197;</span><div><div class="r-label">ESTANCIA</div><div class="r-value">Domingo 26 &rarr; Martes 28 julio</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128272;</span><div><div class="r-label">LOCALIZADOR</div><div class="code-box priv" data-field="roses_hotel_loc">&#128274;</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128273;</span><div><div class="r-label">PIN DE ACCESO</div><div class="pin-box priv" data-field="roses_hotel_pin">&#128274;</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128182;</span><div><div class="r-label">PRECIO</div><div class="r-value priv" data-field="roses_hotel_precio">&#128274;</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128205;</span><div><div class="r-label">UBICACI&Oacute;N</div><a class="maps-link" href="https://maps.google.com/?q=Hollywood+Palazzo+Roses" target="_blank">&#128205; Abrir en Google Maps</a></div></div>
-      </div>
-    </div>
-    <div class="reserva-card hotel" style="border-left-color:#8B5CF6;">
-      <div class="reserva-type" style="color:#8B5CF6;">&#127963;&#65039; Hotel &middot; Girona</div>
-      <div class="reserva-name">Hotel Sausa &middot; Girona</div>
-      <div class="reserva-fields">
-        <div class="reserva-field"><span class="r-icon">&#128197;</span><div><div class="r-label">ESTANCIA</div><div class="r-value">Martes 28 &rarr; Mi&eacute;rcoles 29 julio</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128272;</span><div><div class="r-label">LOCALIZADOR</div><div class="code-box priv" data-field="girona_hotel_loc">&#128274;</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128273;</span><div><div class="r-label">PIN DE ACCESO</div><div class="pin-box priv" data-field="girona_hotel_pin">&#128274;</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128182;</span><div><div class="r-label">PRECIO</div><div class="r-value priv" data-field="girona_hotel_precio">&#128274;</div></div></div>
-        <div class="reserva-field"><span class="r-icon">&#127760;</span><div><div class="r-label">WEB</div><a class="maps-link" href="https://www.hotelsausa.com/ca/" target="_blank">&#127760; hotelsausa.com</a></div></div>
-        <div class="reserva-field"><span class="r-icon">&#128205;</span><div><div class="r-label">UBICACI&Oacute;N</div><a class="maps-link" href="https://maps.google.com/?q=Hotel+Sausa+Girona" target="_blank">&#128205; Abrir en Google Maps</a></div></div>
-      </div>
-    </div>
   </div>
 </div>
 
@@ -689,9 +566,7 @@
       <div class="budget-card-header"><div class="budget-card-title">&#127968; Alojamiento</div><div class="budget-card-total priv" data-field="alojamiento_total">&#128274;</div></div>
       <div class="budget-row"><div class="budget-row-left"><div class="budget-row-icon">&#127807;</div><div><div class="budget-row-name">Exe Layos Golf &middot; Toledo</div><div class="budget-row-date">14&ndash;16 julio &middot; 2 noches</div></div></div><div class="budget-row-amount priv" data-field="hotel_toledo_precio">&#128274;</div></div>
       <div class="budget-row"><div class="budget-row-left"><div class="budget-row-icon">&#127961;&#65039;</div><div><div class="budget-row-name">ibis Styles Las Ventas &middot; Madrid</div><div class="budget-row-date">16&ndash;20 julio &middot; 4 noches</div></div></div><div class="budget-row-amount priv" data-field="hotel_madrid_precio">&#128274;</div></div>
-      <div class="budget-row"><div class="budget-row-left"><div class="budget-row-icon" style="color:#1B8A8A;">&#127754;</div><div><div class="budget-row-name">Hollywood Palazzo &middot; Roses</div><div class="budget-row-date">26&ndash;28 julio &middot; 2 noches</div></div></div><div class="budget-row-amount priv" data-field="roses_hotel_precio">&#128274;</div></div>
-      <div class="budget-row"><div class="budget-row-left"><div class="budget-row-icon" style="color:#8B5CF6;">&#127963;&#65039;</div><div><div class="budget-row-name">Hotel Sausa &middot; Girona</div><div class="budget-row-date">28&ndash;29 julio &middot; 1 noche</div></div></div><div class="budget-row-amount priv" data-field="girona_hotel_precio">&#128274;</div></div>
-      <div class="budget-bar-wrap"><div class="budget-bar-label"><span>% del total</span><span>~65%</span></div><div class="budget-bar-track"><div class="budget-bar-fill" style="width:65%"></div></div></div>
+      <div class="budget-bar-wrap"><div class="budget-bar-label"><span>% del total</span><span>61,3%</span></div><div class="budget-bar-track"><div class="budget-bar-fill" style="width:61.3%"></div></div></div>
     </div>
     <div class="budget-card">
       <div class="budget-card-header"><div class="budget-card-title">&#127905; Entradas y actividades</div><div class="budget-card-total priv" data-field="entradas_total">&#128274;</div></div>
@@ -722,7 +597,7 @@
     <div class="budget-summary">
       <div class="bs-item"><div class="bs-label">Confirmado</div><div class="bs-value gold priv" data-field="total_confirmado">&#128274;</div></div>
       <div class="bs-item"><div class="bs-label">Pendiente</div><div class="bs-value" style="color:rgba(255,255,255,0.4)">+ extras</div></div>
-      <div class="bs-item"><div class="bs-label">D&iacute;as</div><div class="bs-value">16</div></div>
+      <div class="bs-item"><div class="bs-label">D&iacute;as</div><div class="bs-value">9</div></div>
       <div class="bs-item"><div class="bs-label">Por d&iacute;a</div><div class="bs-value green priv" data-field="por_dia">&#128274;</div></div>
     </div>
   </div>
@@ -758,9 +633,6 @@
         <div class="cl-item"><input type="checkbox" id="r2"><label for="r2"><span class="cl-box"></span><span class="cl-text">Reservar entradas PortAventura World</span></label></div>
         <div class="cl-item"><input type="checkbox" id="r6"><label for="r6"><span class="cl-box"></span><span class="cl-text">Confirmar Hotel Gold River PortAventura</span></label></div>
         <div class="cl-item"><input type="checkbox" id="r7"><label for="r7"><span class="cl-box"></span><span class="cl-text">Reservar Cuevas de H&eacute;rcules (Toledo)</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="r8"><label for="r8"><span class="cl-box"></span><span class="cl-text">Confirmar Hollywood Palazzo &middot; Roses (26&ndash;28 jul)</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="r9"><label for="r9"><span class="cl-box"></span><span class="cl-text">Confirmar Hotel Sausa &middot; Girona (28&ndash;29 jul)</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="r10"><label for="r10"><span class="cl-box"></span><span class="cl-text">Reservar Catam&aacute;ran Islas Medes (27 jul)</span></label></div>
         <div class="cl-item"><input type="checkbox" id="r3"><label for="r3"><span class="cl-box"></span><span class="cl-text">Parking confirmado: Parkia &middot; Zocodover Toledo</span></label></div>
         <div class="cl-item"><input type="checkbox" id="r4"><label for="r4"><span class="cl-box"></span><span class="cl-text">Buscar parking en Madrid</span></label></div>
         <div class="cl-item"><input type="checkbox" id="r5"><label for="r5"><span class="cl-box"></span><span class="cl-text">Planificar ruta Madrid &rarr; Salou</span></label></div>
@@ -769,7 +641,7 @@
     <div class="checklist-group">
       <div class="cl-header"><span class="cl-icon">&#129523;</span><span class="cl-title">Equipaje</span></div>
       <div class="cl-items">
-        <div class="cl-item"><input type="checkbox" id="e1"><label for="e1"><span class="cl-box"></span><span class="cl-text">Ropa para 16 d&iacute;as</span></label></div>
+        <div class="cl-item"><input type="checkbox" id="e1"><label for="e1"><span class="cl-box"></span><span class="cl-text">Ropa para 9 d&iacute;as</span></label></div>
         <div class="cl-item"><input type="checkbox" id="e2"><label for="e2"><span class="cl-box"></span><span class="cl-text">Calzado c&oacute;modo para parques</span></label></div>
         <div class="cl-item"><input type="checkbox" id="e3"><label for="e3"><span class="cl-box"></span><span class="cl-text">Ba&ntilde;ador y toalla</span></label></div>
         <div class="cl-item"><input type="checkbox" id="e4"><label for="e4"><span class="cl-box"></span><span class="cl-text">Protector solar</span></label></div>
@@ -800,23 +672,11 @@
       </div>
     </div>
     <div class="checklist-group">
-      <div class="cl-header"><span class="cl-icon">&#127754;</span><span class="cl-title">Costa Brava</span></div>
-      <div class="cl-items">
-        <div class="cl-item"><input type="checkbox" id="cb1"><label for="cb1"><span class="cl-box"></span><span class="cl-text">Planificar visita Besal&uacute; (28 jul)</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="cb2"><label for="cb2"><span class="cl-box"></span><span class="cl-text">Visitar familiares en Roses (26 jul)</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="cb3"><label for="cb3"><span class="cl-box"></span><span class="cl-text">Ver horarios Catam&aacute;ran Medes (27 jul)</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="cb4"><label for="cb4"><span class="cl-box"></span><span class="cl-text">Planificar visita L'Escala (29 jul)</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="cb5"><label for="cb5"><span class="cl-box"></span><span class="cl-text">Ruta Girona &rarr; Font Montnegre planificada</span></label></div>
-      </div>
-    </div>
-    <div class="checklist-group">
       <div class="cl-header"><span class="cl-icon">&#127968;</span><span class="cl-title">Regreso</span></div>
       <div class="cl-items">
         <div class="cl-item"><input type="checkbox" id="v1"><label for="v1"><span class="cl-box"></span><span class="cl-text">Check-out ibis Styles el 20 julio</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="v2"><label for="v2"><span class="cl-box"></span><span class="cl-text">Ruta PortAventura &rarr; Font Montnegre planificada</span></label></div>
+        <div class="cl-item"><input type="checkbox" id="v2"><label for="v2"><span class="cl-box"></span><span class="cl-text">Ruta PortAventura &rarr; Barcelona planificada</span></label></div>
         <div class="cl-item"><input type="checkbox" id="v3"><label for="v3"><span class="cl-box"></span><span class="cl-text">Preparar bolsa para PortAventura</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="v4"><label for="v4"><span class="cl-box"></span><span class="cl-text">Check-out Hollywood Palazzo el 28 julio</span></label></div>
-        <div class="cl-item"><input type="checkbox" id="v5"><label for="v5"><span class="cl-box"></span><span class="cl-text">Check-out Hotel Sausa el 29 julio</span></label></div>
       </div>
     </div>
   </div>
@@ -891,11 +751,7 @@ function doLogout() {
 function loadPrivateData() {
   db.collection('private').doc('datos').get()
     .then(function(doc) {
-      if (!doc.exists) {
-        console.error('Documento no encontrado en Firestore');
-        showDebugError('Documento no encontrado en Firestore');
-        return;
-      }
+      if (!doc.exists) return;
       var d = doc.data();
       document.querySelectorAll('[data-field]').forEach(function(el) {
         var v = d[el.getAttribute('data-field')];
@@ -903,17 +759,7 @@ function loadPrivateData() {
       });
       document.body.classList.add('loaded');
     })
-    .catch(function(err) {
-      console.error('Firestore error:', err);
-      showDebugError(err.code + ': ' + err.message);
-    });
-}
-
-function showDebugError(msg) {
-  var div = document.createElement('div');
-  div.style.cssText = 'position:fixed;bottom:16px;left:16px;right:16px;background:#C4613A;color:#fff;padding:12px 16px;border-radius:10px;font-size:13px;z-index:9999;font-family:monospace;';
-  div.textContent = '⚠️ Error Firestore: ' + msg;
-  document.body.appendChild(div);
+    .catch(function(err) { console.error('Firestore error:', err); });
 }
 
 // ── TABS ──
@@ -944,13 +790,7 @@ function initMap() {
     {latlng:[39.8628,-4.0273],e:'🏛️',c:'#C4613A',t:'Toledo',s:'14–16 julio · Exe Layos Golf'},
     {latlng:[39.7938,-4.1032],e:'🎭',c:'#C4613A',t:'Puy du Fou España',s:'15 julio · Parque de espectáculos'},
     {latlng:[40.4168,-3.7038],e:'🏙️',c:'#C9A84C',t:'Madrid',s:'16–20 julio · ibis Styles Las Ventas'},
-    {latlng:[41.0871,1.1559], e:'🎡',c:'#5078B4',t:'PortAventura World',s:'20–22 julio · Salou, Tarragona'},
-    {latlng:[42.2630,3.1770], e:'🌊',c:'#1B8A8A',t:'Roses · Costa Brava',s:'26–28 julio · Hollywood Palazzo'},
-    {latlng:[42.0503,3.1500], e:'⛵',c:'#1B8A8A',t:'Islas Medes',s:'27 julio · Excursión catamarán'},
-    {latlng:[42.1988,2.7040], e:'🏰',c:'#8B5CF6',t:'Besalú',s:'28 julio · Visita medieval'},
-    {latlng:[41.9794,2.8214], e:'🏛️',c:'#8B5CF6',t:'Girona',s:'28–29 julio · Hotel Sausa'},
-    {latlng:[42.1211,3.1356], e:'🏖️',c:'#1B8A8A',t:"L'Escala",s:'29 julio · Visita'},
-    {latlng:[41.7500,2.5833], e:'🏡',c:'#4A7A4A',t:'Font Montnegre',s:'22–26 jul · Descanso · 29 jul · Regreso'}
+    {latlng:[41.0871,1.1559], e:'🎡',c:'#5078B4',t:'PortAventura World',s:'20–22 julio · Salou, Tarragona'}
   ];
   L.polyline(stops.map(function(s){return s.latlng;}),{color:'#C9A84C',weight:3,opacity:0.7,dashArray:'8,6'}).addTo(map);
   stops.forEach(function(s){L.marker(s.latlng,{icon:icon(s.e,s.c)}).addTo(map).bindPopup('<div class="map-popup-title">'+s.e+' '+s.t+'</div><div class="map-popup-sub">'+s.s+'</div>');});
