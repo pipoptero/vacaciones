@@ -835,10 +835,23 @@ var firebaseConfig = {
   appId: "1:979773721780:web:56e2eba9f1511078db9be1"
 };
 firebase.initializeApp(firebaseConfig);
-firebase.appCheck().activate(
-  new firebase.appCheck.ReCaptchaV3Provider('6LcexpUsAAAAAKzsf1RuXtry4H_9BGvnemiGP7m1'),
-  true
-);
+
+// Debug: comprobar si app-check cargó
+var appCheckLoaded = typeof firebase.appCheck === 'function';
+console.log('App Check disponible:', appCheckLoaded);
+
+if (appCheckLoaded) {
+  try {
+    firebase.appCheck().activate(
+      new firebase.appCheck.ReCaptchaV3Provider('6LcexpUsAAAAAKzsf1RuXtry4H_9BGvnemiGP7m1'),
+      true
+    );
+    console.log('App Check activado');
+  } catch(e) {
+    console.error('App Check activate error:', e);
+  }
+}
+
 var auth = firebase.auth();
 var db   = firebase.firestore();
 
@@ -847,15 +860,8 @@ auth.setPersistence(firebase.auth.Auth.Persistence.SESSION);
 auth.onAuthStateChanged(function(user) {
   if (user) {
     document.body.classList.add('logged-in');
-    firebase.appCheck().getToken(false)
-      .then(function(result) {
-        showDebugError('✅ AppCheck OK · token: ' + result.token.substring(0,20) + '…');
-        loadPrivateData();
-      })
-      .catch(function(err) {
-        showDebugError('❌ AppCheck FALLÓ: ' + err.message);
-        loadPrivateData();
-      });
+    console.log('Usuario autenticado:', user.email);
+    loadPrivateData();
     initApp();
   }
 });
