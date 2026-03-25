@@ -836,7 +836,7 @@ var firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 firebase.appCheck().activate(
-  new firebase.appCheck.ReCaptchaV3Provider('6Ld8QJYsAAAAAINCwikg0UBHmoNqyNaJApnm7_U6'),
+  new firebase.appCheck.ReCaptchaV3Provider('6LcexpUsAAAAAKzsf1RuXtry4H_9BGvnemiGP7m1'),
   true
 );
 var auth = firebase.auth();
@@ -847,7 +847,9 @@ auth.setPersistence(firebase.auth.Auth.Persistence.SESSION);
 auth.onAuthStateChanged(function(user) {
   if (user) {
     document.body.classList.add('logged-in');
-    loadPrivateData();
+    firebase.appCheck().getToken(false)
+      .then(function() { loadPrivateData(); })
+      .catch(function() { loadPrivateData(); });
     initApp();
   }
 });
